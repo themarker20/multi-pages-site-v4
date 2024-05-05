@@ -1,0 +1,70 @@
+.self-landing {
+	background-image: url(./../imgs/landing.jpg);
+	background-size: cover;
+	width: 100%;
+	padding: 30px 0;
+	height: calc(90vh - 72px);
+	flex-direction: column;
+}
+
+.self-landing .container {
+	height: 100%;
+	flex-direction: column;
+	color: #fff;
+}
+
+.self-landing .container h2 {
+	margin: 30px 0px;
+    font-size: 40px;
+}
+
+.self-landing .container p {
+	line-height: 1.7;
+    padding: 20px;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+}
+
+.self-landing .container .visit-links {
+	display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 8%;
+}
+
+.self-landing .container .visit-links a {
+	padding: 10px 15px;
+    color: var(--main-color-alt);
+    border: 2px solid var(--main-color);
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #000000ba;
+    transition: all 0.4s;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.self-landing .container .visit-links a::before {
+	content: "";
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 100%;
+	transition: all 0.4s;
+	background-color: var(--main-color);
+}
+
+.self-landing .container .visit-links a:hover {
+	color: #fff;
+	border-color: #ffffffa8;
+}
+
+.self-landing .container .visit-links a:hover::before {
+	bottom: 0;
+}

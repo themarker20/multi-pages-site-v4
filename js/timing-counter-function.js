@@ -1,7 +1,7 @@
 
 // Live Count Down to Spacific Date
 // You Can Change Date to any date you want
-let countDownDate = new Date("Dec 31, 2023 23:59:59").getTime();
+let countDownDate = new Date("Dec 31, 2024 23:59:59").getTime();
 // console.log(countDownDate);
 let counter = setInterval(() => {
 	// Get Date Now
